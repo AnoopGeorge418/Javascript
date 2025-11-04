@@ -1,0 +1,20 @@
+{
+  "name": "javascript-projects-problems",
+  "version": "1.0.0",
+  "description": "Solving simple problems and learn javascript more effectively",
+  "homepage": "https://github.com/AnoopGeorge418/Javascript#readme",
+  "bugs": {
+    "url": "https://github.com/AnoopGeorge418/Javascript/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnoopGeorge418/Javascript.git"
+  },
+  "license": "ISC",
+  "author": "Anoop George",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
