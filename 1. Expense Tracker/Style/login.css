@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Belleza&family=Benne&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne+Mono&display=swap');
+
+* { 
+    font-family: "Alice";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(#2A3C5D, #010D24);
+}
+
+.main_body {
+    width: 819px;
+    height: 351px;
+    background: linear-gradient(#3A4D6C, #16263F);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main_body h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.main_body p {
+    color: white;
+    font-size: 20px;
+    width: 733px;
+}
+
+.main_body button {
+    color: white;
+    background-color: black;
+    width: 273px;
+    height: 53px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 5px;
+}

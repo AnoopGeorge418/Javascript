@@ -1,5 +1,0 @@
-export class AccountCreation {
-    constructor () {
-        
-    }
-}

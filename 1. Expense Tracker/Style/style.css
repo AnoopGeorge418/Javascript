@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Belleza&family=Benne&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne+Mono&display=swap');
+
+body { 
+    font-family: "Alice";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(#2A3C5D, #010D24);
+}
+
+.headlines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.headlines h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.headlines p {
+    font-size: 20px;
+    width: 978px;
+    color: white;
+    position: absolute;
+    margin-top: 4rem;
+}
+
+.headlines button {
+    width: 375px;
+    background: black;
+    color: white;
+    font-size: 20px;
+    margin-top: 3rem;
+    border: none;
+    border-radius: 10px;
+    height: 43px;
+    cursor: pointer;
+    font-family: "Alice";
+}
+
+.headlines button:hover {
+    background: #ffffff;
+    color: black;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    background: -webkit-linear-gradient(#0040B3, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 28px;
+    margin: 0;
+}
+
+.navbar button {
+    width: 150px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    height: 43px;
+    cursor: pointer;
+    font-family: "Alice";
+    transition: all 0.3s ease;
+}
+
+.navbar button:hover {
+    background: #ffffff;
+    color: black;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 5px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #6F6F6F;
+}
+
+.copyright .date {
+    color: #CACACA;
+}
+
+.copyright .title, .name, .lang{
+    color: white;
+}
+
