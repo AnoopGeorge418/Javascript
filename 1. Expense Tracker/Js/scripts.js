@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".launch, .signIn").forEach((btn => {
+    const launchBtn = document.querySelector(".launch");
+    const signInBtn = document.querySelector(".signIn");
+
+    launchBtn.addEventListener("click", () => {
         window.location.href = "./login.html";
-    }));
+    });
+
+    signInBtn.addEventListener("click", () => {
+        window.location.href = "./login.html";
+    });
 
 })
