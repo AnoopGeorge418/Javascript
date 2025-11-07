@@ -50,3 +50,98 @@
     font-size: 25px;
     margin-top: 5px;
 }
+
+.loginContainer {
+    width: 819px;
+    height: 351px;
+    background: linear-gradient(#3A4D6C, #16263F);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.acChooser, .usChooser {
+    width: 143px;
+    height: 33px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.acChooser:hover, .usChooser:hover {
+    background-color: black;
+    color: white;
+}
+
+.input1, .input3 {
+    width: 723px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 20px;
+}
+
+.verifyBtn {
+    width: 301px;
+    height: 38px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.verifyBtn:hover {
+    background-color: rgb(15, 14, 14);
+}
+
+.btnContainer {
+    display: flex;
+    gap: 10px;
+    margin-right: 26.3rem;
+}
+
+.toastContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    margin-bottom: 19.5rem;
+    margin-left: 65rem;
+}
+
+.toastSuccess {
+    width: auto;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: rgb(4, 168, 4);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid rgb(0, 255, 0);
+}
+
+.toastError {
+    width: auto;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: rgb(168, 4, 4);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid rgb(255, 0, 0);
+}
