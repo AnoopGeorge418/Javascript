@@ -114,6 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const userAccountNumber = JSON.parse(localStorage.getItem("userAuth"));
                 if ( !userAccountNumber ) {
                     toastMsg("error", "No user found in localstorage");
+                    window.location.href = "./dashboard.html";
                     return;
                 }
 
@@ -139,6 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const userUserName = JSON.parse(localStorage.getItem("userAuth"));
                 if ( !userUserName) {
                     toastMsg("error", "No user found in localstorage");
+                    window.location.href = "./dashboard.html";
                     return;
                 }
 
