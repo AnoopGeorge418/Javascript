@@ -39,7 +39,7 @@
     width: 733px;
 }
 
-.main_body button {
+.main_body #okBtn {
     color: white;
     background-color: black;
     width: 273px;

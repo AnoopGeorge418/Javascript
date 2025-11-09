@@ -93,15 +93,14 @@ body {
 }
 
 .copyright {
-    position: absolute;
-    bottom: 5px;
-    padding: 0 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     color: #6F6F6F;
-}
+    width: 100%;
+  }
 
 .copyright .date {
     color: #CACACA;
