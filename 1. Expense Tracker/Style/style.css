@@ -1,10 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Belleza&family=Benne&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #2A3C5D;
+    --secondary-color: #010D24;
+    --accent-color: #3A4D6C;
+    --text-color: #FFFFFF;
+    --button-bg-color: #007BFF;
+    --button-hover-bg-color: #0056b3;
+    --navbar-bg-color: rgba(0, 0, 0, 0.2);
+}
 
 body { 
-    font-family: "Alice";
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
 }
 
 .mainContainer {
@@ -12,8 +24,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
-    background: linear-gradient(#2A3C5D, #010D24);
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .headlines {
@@ -25,88 +37,113 @@ body {
 }
 
 .headlines h1 {
-    font-size: 50px;
-    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .headlines p {
-    font-size: 20px;
-    width: 978px;
-    color: white;
-    position: absolute;
-    margin-top: 4rem;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin-bottom: 2rem;
 }
 
-.headlines button {
-    width: 375px;
-    background: black;
-    color: white;
-    font-size: 20px;
-    margin-top: 3rem;
+.headlines .launch {
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 15px 30px;
     border: none;
-    border-radius: 10px;
-    height: 43px;
+    border-radius: 5px;
     cursor: pointer;
-    font-family: "Alice";
+    transition: background-color 0.3s ease;
 }
 
-.headlines button:hover {
-    background: #ffffff;
-    color: black;
+.headlines .launch:hover {
+    background-color: var(--button-hover-bg-color);
 }
 
 .navbar {
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 0;
     right: 0;
-    padding: 0 50px;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--navbar-bg-color);
 }
 
 .navbar h1 {
-    background: -webkit-linear-gradient(#0040B3, #FFFFFF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 28px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color);
     margin: 0;
 }
 
 .navbar button {
-    width: 150px;
-    background: black;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
-    height: 43px;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    font-family: "Alice";
     transition: all 0.3s ease;
 }
 
 .navbar button:hover {
-    background: #ffffff;
-    color: black;
+    background-color: var(--text-color);
+    color: var(--primary-color);
 }
 
 .copyright {
     position: fixed;
-    bottom: 10px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    color: #6F6F6F;
-    width: 100%;
-  }
-
-.copyright .date {
-    color: #CACACA;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
 }
 
-.copyright .title, .name, .lang{
-    color: white;
+.copyright .date,
+.copyright .title,
+.copyright .name,
+.copyright .lang {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .headlines h1 {
+        font-size: 2.5rem;
+    }
+
+    .headlines p {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headlines h1 {
+        font-size: 2rem;
+    }
+
+    .headlines p {
+        font-size: 0.9rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 

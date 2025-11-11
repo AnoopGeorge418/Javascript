@@ -11,99 +11,66 @@ document.addEventListener("DOMContentLoaded", () => {
     const updateAccountBtn = document.getElementById("btnUpdate");
     const deleteAccountBtn = document.getElementById("btnDelete");
     const aiChatBtn = document.getElementById("btnAi");
-    const mainContainer = document.querySelector(".mainContainer");
+    const addMoneyBtn = document.getElementById("btnAddMoney");
+
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+    if (!currentUser) {
+        window.location.href = "login.html";
+    }
 
     exitBtn.addEventListener("click", () => {
-        const exitWarning = document.createElement("div");
-        
-        // hiding dashboard contents 
-        const mainH1 = document.querySelector(".mainH1");
-        const btns = document.querySelector(".btnsClass");
-
-        mainH1.style.display = "none";
-        btns.style.display = "none";
-
-        // adding content to the exit warning
-        exitWarning.classList.add("main_body");
-
-        const warningTitle = document.createElement("h1");
-        warningTitle.classList.add("h1");
-        warningTitle.textContent = "Are You Sure You Want To Exit?";
-        exitWarning.appendChild(warningTitle);
-
-        // creating container for buttons
-        const warningBtnContainer = document.createElement("div");
-        warningBtnContainer.classList.add("warningBtnContainer");
-        exitWarning.appendChild(warningBtnContainer);
-
-        // adding to buttons
-        const yesBtn = document.createElement("button");
-        yesBtn.classList.add("yesBtn");
-        yesBtn.textContent = "Yes";
-        yesBtn.type = "button";
-        warningBtnContainer.appendChild(yesBtn);
-
-        yesBtn.addEventListener("click", () => {
-            window.location.href = "./index.html";
-        })
-
-        const noBtn = document.createElement("button");
-        noBtn.classList.add("noBtn");
-        noBtn.textContent = "No";
-        noBtn.type = "button";
-        warningBtnContainer.appendChild(noBtn);
-
-        noBtn.addEventListener("click", () => {
-            mainContainer.removeChild(exitWarning);
-            mainH1.style.display = "block";
-            btns.style.display = "grid";
-        })
-
-        mainContainer.appendChild(exitWarning);
-    })
+        if (confirm("Are you sure you want to exit?")) {
+            localStorage.removeItem("currentUser");
+            window.location.href = "index.html";
+        }
+    });
 
     viewTransactionBtn.addEventListener("click", () => {
-        window.location.href = "./transactions.html"
-    })
+        window.location.href = "transactions.html";
+    });
 
     viewBalanceBtn.addEventListener("click", () => {
-        window.location.href = "./balance.html"
-    })
+        window.location.href = "balance.html";
+    });
 
     withdrawBtn.addEventListener("click", () => {
-        window.location.href = "./withdraw.html"
-    })
+        window.location.href = "withdraw.html";
+    });
 
     depositBtn.addEventListener("click", () => {
-        window.location.href = "./deposit.html"
-    })
+        window.location.href = "deposit.html";
+    });
+
+    addMoneyBtn.addEventListener("click", () => {
+        window.location.href = "addMoney.html";
+    });
 
     generatePinBtn.addEventListener("click", () => {
-        window.location.href = "./generatePin.html"
-    })
+        window.location.href = "generatePin.html";
+    });
 
     generateAnalyticsBtn.addEventListener("click", () => {
-        window.location.href = "./generateAnalytics.html"
-    })
+        window.location.href = "generateAnalytics.html";
+    });
 
     splitBillBtn.addEventListener("click", () => {
-        window.location.href = "./splitBill.html"
-    })
+        window.location.href = "splitBill.html";
+    });
 
     createNewAccountBtn.addEventListener("click", () => {
-        window.location.href = "./createNewAccount.html"
-    })
+        window.location.href = "createNewAccount.html";
+    });
 
     updateAccountBtn.addEventListener("click", () => {
-        window.location.href = "./updateAccountInfo.html"
-    })
+        window.location.href = "updateAccountInfo.html";
+    });
 
     deleteAccountBtn.addEventListener("click", () => {
-        window.location.href = "./deleteAccount.html"
-    })
+        window.location.href = "deleteAccount.html";
+    });
 
     aiChatBtn.addEventListener("click", () => {
-        window.location.href = "./aiChat.html"
-    })
-
-})
+        window.location.href = "aiChat.html";
+    });
+});

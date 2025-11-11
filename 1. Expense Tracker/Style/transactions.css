@@ -5,155 +5,73 @@
     font-family: "Alice";
 }
 
-.mainContainerForThis {
-    padding-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    height: auto;
-    padding-bottom: 100px;
+:root {
+    --primary-color: #2A3C5D;
+    --secondary-color: #010D24;
+    --accent-color: #3A4D6C;
+    --text-color: #FFFFFF;
+    --table-header-bg-color: #4A5C7D;
+    --table-row-bg-color: #3A4D6C;
+    --table-row-hover-bg-color: #4A5C7D;
 }
 
-.transactionViewHolder {
-    width: 1260px;
-    height: 150px;
-    background: linear-gradient(135deg, #2d4156 0%, #3a4f66 100%);
-    color: white;
+.transactions-container {
+    background-color: var(--accent-color);
+    padding: 40px;
     border-radius: 10px;
-    margin-top: 1.5rem;
-    position: relative;
-    padding: 20px 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    overflow-x: auto;
 }
 
-.titleInfo {
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    top: 22px;
-    left: 30px;
-    color: #ffffff;
+.transactions-container h2 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
-.id {
-    font-size: 11px;
-    position: absolute;
-    top: 42px;
-    left: 30px;
-    color: #6b7c92;
+#transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--text-color);
 }
 
-.amount {
-    font-size: 46px;
-    font-weight: 400;
-    position: absolute;
-    bottom: 25px;
-    left: 30px;
-    color: #ffffff;
-    letter-spacing: 0.5px;
+#transactions-table th,
+#transactions-table td {
+    padding: 15px;
+    text-align: left;
 }
 
-.category {
-    font-size: 12px;
-    position: absolute;
-    bottom: 44px;
-    left: 220px;
-    color: #a8b8cc;
+#transactions-table thead {
+    background-color: var(--table-header-bg-color);
 }
 
-.category::before {
-    content: "Category: ";
-    color: #a8b8cc;
+#transactions-table tbody tr {
+    background-color: var(--table-row-bg-color);
+    transition: background-color 0.3s ease;
 }
 
-.dateInfo {
-    font-size: 12px;
-    position: absolute;
-    bottom: 44px;
-    left: 415px;
-    color: #a8b8cc;
+#transactions-table tbody tr:hover {
+    background-color: var(--table-row-hover-bg-color);
 }
 
-.date::before {
-    content: "Date: ";
-    color: #a8b8cc;
+#transactions-table tbody tr:nth-child(even) {
+    background-color: #354661;
 }
 
-.time {
-    font-size: 12px;
-    position: absolute;
-    bottom: 44px;
-    left: 585px;
-    color: #a8b8cc;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .transactions-container {
+        padding: 20px;
+    }
+
+    #transactions-table th,
+    #transactions-table td {
+        padding: 10px;
+    }
 }
 
-.time::before {
-    content: "Time: ";
-    color: #a8b8cc;
-}
-
-.billsplit {
-    font-size: 12px;
-    position: absolute;
-    bottom: 44px;
-    left: 690px;
-    color: #a8b8cc;
-}
-
-.billsplit::before {
-    content: "Bill Splitted: ";
-    color: #a8b8cc;
-}
-
-.from {
-    font-size: 13px;
-    position: absolute;
-    top: 22px;
-    right: 320px;
-    color: #ffffff;
-}
-
-.from::before {
-    content: "From: ";
-    color: #8a9fb5;
-}
-
-.to {
-    font-size: 13px;
-    position: absolute;
-    top: 45px;
-    right: 320px;
-    color: #ffffff;
-}
-
-.to::before {
-    content: "To: ";
-    color: #8a9fb5;
-}
-
-.accountType {
-    font-size: 13px;
-    position: absolute;
-    top: 22px;
-    right: 30px;
-    color: #ffffff;
-}
-
-.accountType::before {
-    content: "Account Type: ";
-    color: #8a9fb5;
-}
-
-.recipientAccountType {
-    font-size: 13px;
-    position: absolute;
-    top: 45px;
-    right: 30px;
-    color: #ffffff;
-}
-
-.recipientAccountType::before {
-    content: "Recipient Account Type: ";
-    color: #8a9fb5;
-}
 

@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #2A3C5D;
+    --secondary-color: #010D24;
+    --accent-color: #3A4D6C;
+    --text-color: #FFFFFF;
+    --delete-button-bg-color: #DC3545;
+    --delete-button-hover-bg-color: #c82333;
+}
+
+.form-container {
+    background-color: var(--accent-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.form-container h2 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.form-container p {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.delete-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--delete-button-bg-color);
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: var(--delete-button-hover-bg-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+    }
+}

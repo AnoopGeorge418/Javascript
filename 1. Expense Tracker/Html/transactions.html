@@ -3,19 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transactions</title>
+    <title>FinSage - Transactions</title>
     <link rel="stylesheet" href="../Style/style.css">
     <link rel="stylesheet" href="../Style/transactions.css">
 </head>
 <body>
-    <div class="mainContainer mainContainerForThis">
+    <div class="mainContainer"> 
         <div class="navbar">
             <h1>FinSage</h1> 
-            <button class="goBack">Go Back</button>
+            <a href="dashboard.html"><button class="goBack">Go Back</button></a>
         </div>
-
-        <div class="mainbody"></div>
-
+        <div class="transactions-container">
+            <h2>Your Transactions</h2>
+            <table id="transactions-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Transactions will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
         <div class="copyright">
             <p>© <span class="date">2025</span> <span class="title">FinSage</span>. Built by <span class="name">Anoop George</span>. Crafted with <span class="lang">Vanilla JavaScript</span>.</p>
         </div>

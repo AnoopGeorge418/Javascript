@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSage - Generate PIN</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/generatePin.css">
+</head>
+<body>
+    <div class="mainContainer"> 
+        <div class="navbar">
+            <h1>FinSage</h1> 
+            <a href="dashboard.html"><button class="goBack">Go Back</button></a>
+        </div>
+        <div class="form-container">
+            <h2>Generate New PIN</h2>
+            <form id="generate-pin-form">
+                <div class="input-group">
+                    <label for="current-password">Current Password</label>
+                    <input type="password" id="current-password" required>
+                </div>
+                <div class="input-group">
+                    <label for="new-pin">New PIN</label>
+                    <input type="password" id="new-pin" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-pin">Confirm New PIN</label>
+                    <input type="password" id="confirm-pin" required>
+                </div>
+                <button type="submit" class="generate-pin-btn">Generate PIN</button>
+            </form>
+        </div>
+        <div class="copyright">
+            <p>© <span class="date">2025</span> <span class="title">FinSage</span>. Built by <span class="name">Anoop George</span>. Crafted with <span class="lang">Vanilla JavaScript</span>.</p>
+        </div>
+    </div>
+
+    <script type="module" src="../Js/generatePin.js"></script>
+</body>
+</html>

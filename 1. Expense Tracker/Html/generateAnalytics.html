@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSage - Account Analytics</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/analytics.css">
+</head>
+<body>
+    <div class="mainContainer"> 
+        <div class="navbar">
+            <h1>FinSage</h1> 
+            <a href="dashboard.html"><button class="goBack">Go Back</button></a>
+        </div>
+        <div class="analytics-container">
+            <h2>Account Analytics</h2>
+            <div class="analytics-summary">
+                <div class="summary-card">
+                    <h3>Total Balance</h3>
+                    <p id="total-balance">₹ 0</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Total Transactions</h3>
+                    <p id="total-transactions">0</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Total Spent</h3>
+                    <p id="total-spent">₹ 0</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Total Received</h3>
+                    <p id="total-received">₹ 0</p>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="transaction-chart"></canvas>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© <span class="date">2025</span> <span class="title">FinSage</span>. Built by <span class="name">Anoop George</span>. Crafted with <span class="lang">Vanilla JavaScript</span>.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="../Js/analytics.js"></script>
+</body>
+</html>

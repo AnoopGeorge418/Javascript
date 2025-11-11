@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSage - Split Bill</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/splitBill.css">
+</head>
+<body>
+    <div class="mainContainer"> 
+        <div class="navbar">
+            <h1>FinSage</h1> 
+            <a href="dashboard.html"><button class="goBack">Go Back</button></a>
+        </div>
+        <div class="form-container">
+            <h2>Split Bill</h2>
+            <form id="split-bill-form">
+                <div class="input-group">
+                    <label for="total-bill">Total Bill Amount</label>
+                    <input type="number" id="total-bill" min="1" required>
+                </div>
+                <div class="input-group">
+                    <label for="number-of-people">Number of People</label>
+                    <input type="number" id="number-of-people" min="2" required>
+                </div>
+                <button type="submit" class="calculate-btn">Calculate Split</button>
+            </form>
+            <div id="split-result" class="split-result"></div>
+        </div>
+        <div class="copyright">
+            <p>© <span class="date">2025</span> <span class="title">FinSage</span>. Built by <span class="name">Anoop George</span>. Crafted with <span class="lang">Vanilla JavaScript</span>.</p>
+        </div>
+    </div>
+
+    <script type="module" src="../Js/splitBill.js"></script>
+</body>
+</html>
